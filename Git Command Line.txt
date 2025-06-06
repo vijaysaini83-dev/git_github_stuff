@@ -33,6 +33,7 @@ Note : .git folder contain all of the history.
 > git add <file or files with sapaces in between>// will stage your files/folders(content)
 > git add .                                     // will stage all the staged contents
 > git rm --cached <file>...                     // will un-stage your file/folders(content)
+> git commit --amend                            // will allow you to redo or amend the vary last commit message
 > git commit -m "<Your message>"                // will commit with message.  -m is flag for message
 > git restore <file>...                         // will discard changes in working directory for that file or directory
 > git log                                       // Will show the entire history with commit numbers and other information
