@@ -36,4 +36,5 @@ Note : .git folder contain all of the history.
 > git commit -m "<Your message>"                // will commit with message.  -m is flag for message
 > git restore <file>...                         // will discard changes in working directory for that file or directory
 > git log                                       // Will show the entire history with commit numbers and other information
-                                  
+
+> git config --global core.editor "code --wait" // will setup the vs code as default editor for your commit message (by default is vim), --wait flag is to wait till you type your message.                               
