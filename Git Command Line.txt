@@ -1,0 +1,32 @@
+Git Commands --
+
+> cd <location or dirctory name>  				// To change the dirctory
+> ls 											// List the dirctories
+> ls -a											// List the hidden fil
+> ls <location or dirctory name>				// List the contents or the location
+> start .										// Opens up the current dirctory
+> start <location or the dirctory name>			// Open the location in the folder explorer
+> clear											// Clear terminal
+> pwd											// Will print the working dirctory
+> cd ..											// goes to one dirctory back
+> cd <location or dirctory>						// goes to the location or in the dirctory given
+> cd <initial of  dirctory + Tab>				// will complete the dirctory name for you
+> touch <file name,....>						// will create the file for you in the current dirctory or at the given path
+> mkdir <folder1 folder 2 ...>				    // will create folder for you in terminal current dirctory or at the given path
+> rm <location/file>							// will remove the file permanently (Be carefull)
+> rm -rf <location/folder>						// will remove the folder permanently (Be carefull)
+
+
+
+
+
+> git config user.name   						// To check if we have already configured user name
+> git config --global user.name "Vijay Saini"	// To setup the user name
+> git config user.email							// To check if you have already configured email addres
+> git config --global user.email vijay.saini83@gmail.com // To setup your email addres
+
+> git status 									// will give you the stauts about your repository
+> git init										// will create a git repository in the folder you are in that time(this is one time)
+Note : .git folder contain all of the history. 
+> git add <file or files with sapaces in between>// will stage your files/folders(content)
+> git rm --cached <file>...                     // will un-stage your file/folders(content)
