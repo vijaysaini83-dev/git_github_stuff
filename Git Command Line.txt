@@ -27,8 +27,13 @@ Git Commands --
 
 > git status 									// will give you the stauts about your repository
 > git init										// will create a git repository in the folder you are in that time(this is one time)
+
 Note : .git folder contain all of the history. 
+
 > git add <file or files with sapaces in between>// will stage your files/folders(content)
+> git add .                                     // will stage all the staged contents
 > git rm --cached <file>...                     // will un-stage your file/folders(content)
 > git commit -m "<Your message>"                // will commit with message.  -m is flag for message
-> git restore <file>...                         // will discard changes in working directory
+> git restore <file>...                         // will discard changes in working directory for that file or directory
+> git log                                       // Will show the entire history with commit numbers and other information
+                                  
