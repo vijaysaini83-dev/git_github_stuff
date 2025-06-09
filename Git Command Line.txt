@@ -64,6 +64,6 @@ Note : You can not delete the branch if you are in that branch at that time.
 > git branch -D <branch name>                           // will forcefuly delete the branch irrespective of its satatus (fully marge or not)
                                                         // you can use -d -f as well in place of -D
 
-Note : Mostly when flags are used in Caps, it carry the --forced , -f flag
+Note : Mostly when flags are used in Caps, it carries the --forced , -f flag
 
 > git branch -m <New name from the current branch>      // will rename your branch. You need to be in that branch to rename and -m stands for move
