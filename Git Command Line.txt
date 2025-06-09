@@ -48,3 +48,6 @@ Note : Added .gitingnore in the root of the project and mentioned the files whic
 > git branch <branch name>                       // will create a new branch but do not check out in that
 > git switch <branch name>                       // will switch you in the given branch
 > git commit -a -m "<your message>"              // will stage and commit with the message at the same time
+
+> git switch -c "<branch name>"                  // will create and switch to that branch, flag -c is for create
+> git checkout "<branch name>"                // will create and switch to that branch
