@@ -46,3 +46,9 @@ Note : Added .gitingnore in the root of the project and mentioned the files whic
 
 > git branch                                     // will give the all branchs in the repository, the working branch will have * before it
 > git branch <branch name>                       // will create a new branch but do not check out in that
+
+Note : If you change a file and try to switch your branch without commiting that change and your change is in conflict then you will get 
+       warning and your switching will be Aborted. 
+       If you have a new file created or a change which is not in conflict with any other branch then and you try to switch the branch without
+       commiting your changes then the new file or change will go with you and you will be able to switch the branch. Now you can commit that file 
+       in the branch you swiched in or in the branch you came from. The new change or file will be part of that branch where you commit that only.
