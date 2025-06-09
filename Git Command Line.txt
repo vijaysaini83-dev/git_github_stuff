@@ -67,3 +67,9 @@ Note : You can not delete the branch if you are in that branch at that time.
 Note : Mostly when flags are used in Caps, it carries the --forced , -f flag
 
 > git branch -m <New name from the current branch>      // will rename your branch. You need to be in that branch to rename and -m stands for move
+
+
+Note : Now we are talking about marge. If you want to marge feature brach in the main branch then in order to do that you need to checkout the
+       main brach first then you have to issue the command to marge feature branch into mail.
+       Example : > git switch main                      // swiched to main
+                 > git merge <feature branch name>      // This will marge the feature branch into main, it is also call fast-forward marge.
