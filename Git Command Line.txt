@@ -61,7 +61,7 @@ Note : If you change a file and try to switch your branch without commiting that
 > git branch -d <branch name>                           // will delete the given branch
 Note : You can not delete the branch if you are in that branch at that time.
 
-> git branch -D <branch name>                           // will forcefuly delete the branch irrespective of its satatus (fully marge or not)
+> git branch -D <branch name>                           // will forcefuly delete the branch irrespective of its satatus (fully merge or not)
                                                         // you can use -d -f as well in place of -D
 
 Note : Mostly when flags are used in Caps, it carries the --forced , -f flag
@@ -69,7 +69,7 @@ Note : Mostly when flags are used in Caps, it carries the --forced , -f flag
 > git branch -m <New name from the current branch>      // will rename your branch. You need to be in that branch to rename and -m stands for move
 
 
-Note : Now we are talking about marge. If you want to marge feature brach in the main branch then in order to do that you need to checkout the
-       main brach first then you have to issue the command to marge feature branch into mail.
+Note : Now we are talking about merge. If you want to merge feature brach in the main branch then in order to do that you need to checkout the
+       main brach first then you have to issue the command to merge feature branch into mail.
        Example : > git switch main                      // swiched to main
-                 > git merge <feature branch name>      // This will marge the feature branch into main, it is also call fast-forward marge.
+                 > git merge <feature branch name>      // This will merge the feature branch into main, it is also call fast-forward merge.
