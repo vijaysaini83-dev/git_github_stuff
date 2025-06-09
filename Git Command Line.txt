@@ -50,4 +50,4 @@ Note : Added .gitingnore in the root of the project and mentioned the files whic
 > git commit -a -m "<your message>"                     // will stage and commit with the message at the same time
 
 > git switch -c "<branch name>"                         // will create and switch to that branch, flag -c is for create
-> git checkout -b "<branch name>"                       // will create and switch to that branch , flag -b is for branch
+> git checkout -b "<branch name>"                       // will create and switch to that branch, flag -b is for branch
