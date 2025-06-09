@@ -30,24 +30,24 @@ Git Commands --
 
 Note : .git folder contain all of the history. 
 
-> git add <file or files with sapaces in between>// will stage your files/folders(content)
-> git add .                                     // will stage all the staged contents
-> git rm --cached <file>...                     // will un-stage your file/folders(content)
-> git commit --amend                            // will allow you to redo or amend the vary last commit message
-> git commit -m "<Your message>"                // will commit with message.  -m is flag for message
-> git restore <file>...                         // will discard changes in working directory for that file or directory
-> git log                                       // Will show the entire history with commit numbers and other information
-> git log --oneline                             // will show the one line of the commit and shot portion of commit number
+> git add <file or files with sapaces in between>       // will stage your files/folders(content)
+> git add .                                             // will stage all the staged contents
+> git rm --cached <file>...                             // will un-stage your file/folders(content)
+> git commit --amend                                    // will allow you to redo or amend the vary last commit message
+> git commit -m "<Your message>"                        // will commit with message.  -m is flag for message
+> git restore <file>...                                 // will discard changes in working directory for that file or directory
+> git log                                               // Will show the entire history with commit numbers and other information
+> git log --oneline                                     // will show the one line of the commit and shot portion of commit number
 
-> git config --global core.editor "code --wait" // will setup the vs code as default editor for your commit message (by default is vim), --wait flag is to wait till you type your message.                               
+> git config --global core.editor "code --wait"         // will setup the vs code as default editor for your commit message (by default is vim), --wait flag is to wait till you type your message.                               
 
 Note : Added .gitingnore in the root of the project and mentioned the files which need not to be tracked.
        Go to gitignore.io to know what to include in your project gitignore file 
 
-> git branch                                     // will give the all branchs in the repository, the working branch will have * before it
-> git branch <branch name>                       // will create a new branch but do not check out in that
-> git switch <branch name>                       // will switch you in the given branch
-> git commit -a -m "<your message>"              // will stage and commit with the message at the same time
+> git branch                                            // will give the all branchs in the repository, the working branch will have * before it
+> git branch <branch name>                              // will create a new branch but do not check out in that
+> git switch <branch name>                              // will switch you in the given branch
+> git commit -a -m "<your message>"                     // will stage and commit with the message at the same time
 
-> git switch -c "<branch name>"                  // will create and switch to that branch, flag -c is for create
-> git checkout -b "<branch name>"                // will create and switch to that branch , flag -b is for branch
+> git switch -c "<branch name>"                         // will create and switch to that branch, flag -c is for create
+> git checkout -b "<branch name>"                       // will create and switch to that branch , flag -b is for branch
