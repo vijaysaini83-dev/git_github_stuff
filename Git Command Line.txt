@@ -57,3 +57,13 @@ Note : If you change a file and try to switch your branch without commiting that
        If you have a new file created or a change which is not in conflict with any other branch then and you try to switch the branch without
        commiting your changes then the new file or change will go with you and you will be able to switch the branch. Now you can commit that file 
        in the branch you swiched in or in the branch you came from. The new change or file will be part of that branch where you commit that only.
+
+> git branch -d <branch name>                           // will delete the given branch
+Note : You can not delete the branch if you are in that branch at that time.
+
+> git branch -D <branch name>                           // will forcefuly delete the branch irrespective of its satatus (fully marge or not)
+                                                        // you can use -d -f as well in place of -D
+
+Note : Mostly when flags are used in Caps, it carry the --forced , -f flag
+
+> git branch -m <New name from the current branch>      // will rename your branch. You need to be in that branch to rename and -m stands for move
