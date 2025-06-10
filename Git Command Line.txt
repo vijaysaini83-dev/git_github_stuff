@@ -44,11 +44,32 @@ Note : .git folder contain all of the history.
 Note : Added .gitingnore in the root of the project and mentioned the files which need not to be tracked.
        Go to gitignore.io to know what to include in your project gitignore file 
 
-> git branch                                     // will give the all branchs in the repository, the working branch will have * before it
-> git branch <branch name>                       // will create a new branch but do not check out in that
+> git branch                                            // will give the all branchs in the repository, the working branch will have * before it
+> git branch <branch name>                              // will create a new branch but do not check out in that
+> git switch <branch name>                              // will switch you in the given branch
+> git commit -a -m "<your message>"                     // will stage and commit with the message at the same time
+
+> git switch -c "<branch name>"                         // will create and switch to that branch, flag -c is for create
+> git checkout -b "<branch name>"                       // will create and switch to that branch, flag -b is for branch
 
 Note : If you change a file and try to switch your branch without commiting that change and your change is in conflict then you will get 
        warning and your switching will be Aborted. 
        If you have a new file created or a change which is not in conflict with any other branch then and you try to switch the branch without
        commiting your changes then the new file or change will go with you and you will be able to switch the branch. Now you can commit that file 
        in the branch you swiched in or in the branch you came from. The new change or file will be part of that branch where you commit that only.
+
+> git branch -d <branch name>                           // will delete the given branch
+Note : You can not delete the branch if you are in that branch at that time.
+
+> git branch -D <branch name>                           // will forcefuly delete the branch irrespective of its satatus (fully merge or not)
+                                                        // you can use -d -f as well in place of -D
+
+Note : Mostly when flags are used in Caps, it carries the --forced , -f flag
+
+> git branch -m <New name from the current branch>      // will rename your branch. You need to be in that branch to rename and -m stands for move
+
+
+Note : Now we are talking about merge. If you want to merge feature brach in the main branch then in order to do that you need to checkout the
+       main brach first then you have to issue the command to merge feature branch into mail.
+       Example : > git switch main                      // swiched to main
+                 > git merge <feature branch name>      // This will merge the feature branch into main, it is also call fast-forward merge.
