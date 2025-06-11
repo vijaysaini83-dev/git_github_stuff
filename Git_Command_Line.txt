@@ -74,3 +74,5 @@ Note : Now we are talking about merge. If you want to merge feature brach in the
        Example : > git switch main                      // swiched to main
                  > git merge <feature branch name>      // This will merge the feature branch into main, it is also call fast-forward merge.
 
+
+> git mv <old_filename> <new_filename>                  // will rename the file with the given new name
