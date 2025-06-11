@@ -76,9 +76,5 @@ Note : Now we are talking about merge. If you want to merge feature brach in the
 
 
 
-<<<<<<< HEAD
-> git mv <old_filename> <new_filename>                  // will rename the file with the given new name
-=======
 > git mv <old_filename> <new_filename>                  // will rename the file with the given new name. if space is in the file name
                                                         // then pls put the file names in double quots
->>>>>>> git-branching
