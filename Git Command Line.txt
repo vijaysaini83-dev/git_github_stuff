@@ -76,5 +76,3 @@ Note : Now we are talking about merge. If you want to merge feature brach in the
 
 
 
-Test Commit 1
-Test Commit 2
