@@ -84,3 +84,8 @@ Note : Now we are talking about merge. If you want to merge feature brach in the
 > git diff head                                         // will show the changes in the files since the last commit
 > git diff --staged                                     // Will show the changes which are staged.
 > git diff --cached                                     // will show the changes which are staged
+
+> git diff head <filename ... ...>                      // will only show the changes since last commit for the given file
+> git diff --staged <filename ...>                      // will only show the changes which are staged for the given file
+> git diff --cached <filename ...>                      // will only show the changes which are staged for the given file
+> git diff <file ...>                                   // will only show the changes which are not staged
