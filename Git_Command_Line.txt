@@ -91,3 +91,5 @@ Note : Now we are talking about merge. If you want to merge feature brach in the
 > git diff <file ...>                                   // will only show the changes which are not staged
 > git diff [branch1]..[branch2]                         // will show the diff between the given two brachs, 
                                                         // you can use .. or sapce in bwtween the filenames
+> git diff [CommitNum1]..[CommitNum1]                   // will show the diff between the given two commitnumbers,
+                                                        // you can use .. or sapce in bwtween the commitnumbers
