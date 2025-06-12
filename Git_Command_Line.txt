@@ -81,3 +81,6 @@ Note : Now we are talking about merge. If you want to merge feature brach in the
                                                         // then pls put the file names in double quots
 
 > git diff                                              // will show the changes made in the files which are not staged yet.
+> git diff head                                         // will show the changes in the files since the last commit
+> git diff --staged                                     // Will show the changes which are staged.
+> git diff --cached                                     // will show the changes which are staged
