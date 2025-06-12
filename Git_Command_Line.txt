@@ -48,6 +48,7 @@ Note : Added .gitingnore in the root of the project and mentioned the files whic
 > git branch <branch name>                              // will create a new branch but do not check out in that
 > git switch <branch name>                              // will switch you in the given branch
 > git commit -a -m "<your message>"                     // will stage and commit with the message at the same time
+> git commit -am "<your message>"                       // -a and -m flags can be used combined
 
 > git switch -c "<branch name>"                         // will create and switch to that branch, flag -c is for create
 > git checkout -b "<branch name>"                       // will create and switch to that branch, flag -b is for branch
@@ -71,10 +72,12 @@ Note : Mostly when flags are used in Caps, it carries the --forced , -f flag
 
 Note : Now we are talking about merge. If you want to merge feature brach in the main branch then in order to do that you need to checkout the
        main brach first then you have to issue the command to merge feature branch into mail.
-       Example : > git switch main                      // swiched to main
-                 > git merge <feature branch name>      // This will merge the feature branch into main, it is also call fast-forward merge.
+> git switch main                                       // swiched to main
+> git merge <feature branch name>                       // This will merge the feature branch into main, it is also call fast-forward merge.
 
 
 
 > git mv <old_filename> <new_filename>                  // will rename the file with the given new name. if space is in the file name
-                                                        // then pls put the file names in double quots   
+                                                        // then pls put the file names in double quots
+
+> git diff                                              // will show the changes made in the files which are not staged yet.
