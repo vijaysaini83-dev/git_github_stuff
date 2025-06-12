@@ -89,3 +89,5 @@ Note : Now we are talking about merge. If you want to merge feature brach in the
 > git diff --staged <filename ...>                      // will only show the changes which are staged for the given file
 > git diff --cached <filename ...>                      // will only show the changes which are staged for the given file
 > git diff <file ...>                                   // will only show the changes which are not staged
+> git diff [branch1]..[branch2]                         // will show the diff between the given two brachs, 
+                                                        // you can use .. or sapce in bwtween the filenames
