@@ -101,4 +101,5 @@ of the branch then it will be part of that branch only.
 > git stash or git stash save                           // will take your un-staged and staged change off and put them in the stashing 
                                                         // area and allow you to switch the branch. You can do all other stuff there.
 
-> git stash pop                                         // Will re-apply your stashed changes to your branch.
+> git stash pop                                         // Will re-apply your stashed changes to your branch. After pop the changes will be lost from stash
+> git stash apply                                       // will re-apply your stashed changes but will remain in stash
