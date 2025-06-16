@@ -103,3 +103,8 @@ of the branch then it will be part of that branch only.
 
 > git stash pop                                         // Will re-apply your stashed changes to your branch. After pop the changes will be lost from stash
 > git stash apply                                       // will re-apply your stashed changes but will remain in stash
+
+Note : You can do multiple stashing and all the stash will be saved in the order in which they were stashed. Then you can use certain Commands
+to get all the stash to view as list. You can also apply one of them by choosing the index of stash. Follwing are more details on this.
+
+> git stash list                                        // will list the all stashes
