@@ -74,7 +74,7 @@ Note : Now we are talking about merge. If you want to merge feature brach in the
        main brach first then you have to issue the command to merge feature branch into mail.
 > git switch main                                       // swiched to main
 > git merge <feature branch name>                       // This will merge the feature branch into main, it is also call fast-forward merge.
-
+> git merge -                                           // will merge that branch in the current brach in which you was last time
 
 
 > git mv <old_filename> <new_filename>                  // will rename the file with the given new name. if space is in the file name
