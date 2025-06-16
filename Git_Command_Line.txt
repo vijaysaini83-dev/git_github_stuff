@@ -111,3 +111,7 @@ to get all the stash to view as list. You can also apply one of them by choosing
 > git stash apply stash@{0}                             // will apply the stash with the given index
 > git stash drop stash@{0}                              // will drop that perticuler stash with given index
 > git stash clear                                       // will clear the entire stash
+
+> git checkout <commit-hash>                            // will checkout the given commit. This is called detached head. The head always point to 
+                                                        // points to a branch and branch points to a commit. But with this command the head directly
+                                                        // points to a commit. you can give the first 7 digis of your commit hash or the complete hash
