@@ -137,5 +137,3 @@ which is used to create a new brach, for exp: git switch -c <new_branch_name>)
                                                         // in the brach newly created.
 > git reset --hard  <commit hash>/HEAD~n             // This will reset your brach to the specifed commit and you will loose the changes from the 
                                                         // aubsequent commits
-
-> git bad commit
