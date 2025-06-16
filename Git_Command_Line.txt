@@ -130,3 +130,10 @@ which is used to create a new brach, for exp: git switch -c <new_branch_name>)
                                                         // use the restore command with file name like git restore <file or files name> 
 
 > git restore --staged <filenames...>                   // will unstaged the staged changes/or files
+
+> git reset <commit hash>/HEAD~name                     // Will reset the current brach to the specifed commit and will not loose the changes
+                                                        // of subsequent commits. You will have those commit as unstaged changes in the commit you
+                                                        // reset to. Now you can pull new branch from this commit and commit these unstaged changes 
+                                                        // in the brach newly created.
+> git reset --hard  <commit hash>/HEAD~name             // This will reset your brach to the specifed commit and you will loose the changes from the 
+                                                        // aubsequent commits
