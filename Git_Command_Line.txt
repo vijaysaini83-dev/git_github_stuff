@@ -124,3 +124,7 @@ which is used to create a new brach, for exp: git switch -c <new_branch_name>)
 
 > git switch HEAD <filenames...>                        // Will discard the current changes and move the head to the last commit
 > git swich -- <filenames...>                           // will discard the current changes and move the head to the last commit
+
+> git restore --source Head~n/hash <filenames...>       // will restore the file with the content of the commit hash spacifed or the index of the
+                                                        // commit spacifed after tilda (~). If you want to go back to current commit content then
+                                                        // use the restore command with file name like git restore <file or files name> 
