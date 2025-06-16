@@ -128,3 +128,5 @@ which is used to create a new brach, for exp: git switch -c <new_branch_name>)
 > git restore --source Head~n/hash <filenames...>       // will restore the file with the content of the commit hash spacifed or the index of the
                                                         // commit spacifed after tilda (~). If you want to go back to current commit content then
                                                         // use the restore command with file name like git restore <file or files name> 
+
+> git restore --staged <filenames...>                   // will unstaged the staged changes/or files
