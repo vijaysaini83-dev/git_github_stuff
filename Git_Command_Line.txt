@@ -91,10 +91,14 @@ Note : Now we are talking about merge. If you want to merge feature brach in the
 > git diff <file ...>                                   // will only show the changes which are not staged
 > git diff [branch1]..[branch2]                         // will show the diff between the given two brachs, 
                                                         // you can use .. or sapce in bwtween the filenames
-> git diff [CommitNum1]..[CommitNum1]                   // will show the diff between the given two commitnumbers,
+> git diff [CommitNum1]..[CommitNum1]                   // will show the diff between the given two commitnumbers, 
                                                         // you can use .. or sapce in bwtween the commitnumbers
 Note : Stashing
 If you are in a branch and make some changes which are untracked and then try to change your brach, the untracked changes to with 
 to the target branch however they will be showing as untracked changes in the target branch. If you commit those changes in any
 of the branch then it will be part of that branch only.
 
+> git stash or git stash save                           // will take your un-staged and staged change off and put them in the stashing 
+                                                        // area and allow you to switch the branch. You can do all other stuff there.
+
+> git stash pop                                         // Will re-apply your stashed changes to your branch.
