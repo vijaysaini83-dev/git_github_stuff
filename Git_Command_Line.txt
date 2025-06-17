@@ -162,3 +162,5 @@ which is used to create a new brach, for exp: git switch -c <new_branch_name>)
                                                         // for upstreen branch, then the next time onwards if you are in main branch and want to push this branch to remote main branch then
                                                         // you just need to use the git push, thats it. by -u flag it know which branch is linked to your local main branch. Although you can setup
                                                         // the same link between two different local and remote branchs like this :   git push -u <remotename> <local-branch>:<remote-branch>
+> git branch -m <new-branch-name>                       // will rename the current branch you are in. If you use -M then it will forsefully rename the current branch even if
+                                                        // even if the new branch name already exists (it will overwrite).
