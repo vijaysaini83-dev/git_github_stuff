@@ -147,4 +147,4 @@ which is used to create a new brach, for exp: git switch -c <new_branch_name>)
 -- GitHub Commands
 
 > git clone <url>                                       // clone is a git command and bring the repo at the given url with history to you.
-
+> git remote -v                                         // will list all the remotes conf in that repo
