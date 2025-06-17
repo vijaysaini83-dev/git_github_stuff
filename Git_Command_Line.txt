@@ -141,3 +141,7 @@ which is used to create a new brach, for exp: git switch -c <new_branch_name>)
                                                         // contain all the privios commits in the history, only the changes will be gone.
                                                         // this is helpfull as if we loose history then it will hard to merge this branch with other branch
                                                         // where that deleted history still exist.
+
+
+
+-- GitHub Commands
