@@ -152,4 +152,8 @@ which is used to create a new brach, for exp: git switch -c <new_branch_name>)
 > git remote add <remotename> repoURL                   // Will add the given remote for your repository. Origin is the most common remote name but you can keep what you like
 > git remote rename <old> <new>                         // Will rename the old remote
 > git remote remove <name>                              // will remove the remote from the repos
-> git remote <remotename> <branch>                      // will push your branch to remote 
+> git push <remotename> <branch>                        // will push your branch to remote. To push a brach you do not need to be in that branch necessarily.
+                                                        // By convention it will try to look for the brach name you have given in the push command at remote
+                                                        // and push your changes in that. If it does not find one then it will create a new brach for you at remote
+                                                        // with the name you gave in your push command.
+> git push <remotename> <local-branch>:<remote-branch>  // will push your local branch to the given remote branch
