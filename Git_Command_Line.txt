@@ -173,3 +173,4 @@ which is used to create a new brach, for exp: git switch -c <new_branch_name>)
 > git switch <remote-branch-name>                       // When you clone a repo then you get only the default branch as full-fledged branch and other branches as remote tracking branches
                                                         // only. If you want to get those branches as well at your local , use this command. This command is equivalent to 
                                                         // git checkout --track <remotename/branch_name>
+>> git fetch <remotename>                               // This command will fetch all the changes from specific remote without effecting our branch/work
