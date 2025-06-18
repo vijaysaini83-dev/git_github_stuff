@@ -170,3 +170,6 @@ which is used to create a new brach, for exp: git switch -c <new_branch_name>)
 > git branch -r                                         // This command lists all the remote tracking branches available in your repository.
 > git checkout <remotename/remote-branch-name>          // This command checks out the remote tracking branch <remotename/remote-branch-name> in a "detached HEAD" state. 
                                                         // You can view the code and commit hash at that poin as well. 
+> git switch <remote-branch-name>                       // When you clone a repo then you get only the default branch as full-fledged branch and other branches as remote tracking branches
+                                                        // only. If you want to get those branches as well at your local , use this command. This command is equivalent to 
+                                                        // git checkout --track <remotename/branch_name>
