@@ -167,3 +167,4 @@ which is used to create a new brach, for exp: git switch -c <new_branch_name>)
                                                         // the same link between two different local and remote branchs like this :   git push -u <remotename> <local-branch>:<remote-branch>
 > git branch -m <new-branch-name>                       // will rename the current branch you are in. If you use -M then it will forsefully rename the current branch even if
                                                         // even if the new branch name already exists (it will overwrite).
+> git branch -r                                         // This command lists all the remote tracking branches available in your repository.
