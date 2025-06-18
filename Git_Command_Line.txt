@@ -180,3 +180,4 @@ which is used to create a new brach, for exp: git switch -c <new_branch_name>)
 > git fetch <remotename> <branch-name>                  // This command will fetch all the changes from specific branch of a specific remote without effecting our branch/work
 > git pull <remotename> <branch_name>                   // This command will fetch all the changes from specific branch of a specific remote and merge them to our working directory.
                                                         // There can be conflicts and we need to resolve them. In some cases there will be no conflicts and we can have fast forward merge or recursive merge.
+> git pull                                              // This is shotcut of "the git pull <remotename> <branch_name>" command when you have only one remote and the remote name is origin  
