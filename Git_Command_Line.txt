@@ -174,3 +174,4 @@ which is used to create a new brach, for exp: git switch -c <new_branch_name>)
                                                         // only. If you want to get those branches as well at your local , use this command. This command is equivalent to 
                                                         // git checkout --track <remotename/branch_name>
 >> git fetch <remotename>                               // This command will fetch all the changes from specific remote without effecting our branch/work
+>> git fetch <remotename>                               // This command will fetch all the changes from specific branch of a specific remote without effecting our branch/work
