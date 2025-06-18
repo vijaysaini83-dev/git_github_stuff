@@ -176,5 +176,7 @@ which is used to create a new brach, for exp: git switch -c <new_branch_name>)
 > git fetch                                             // This command will fetch all the changes from remote(if we have only one remote) and get them down in our local repository
                                                         // without effecting our branch/work
 > git merge --abort                                     // This command is used to abort the merge going on.
-> git fetch <remotename>                               // This command will fetch all the changes from specific remote without effecting our branch/work
-> git fetch <remotename> <branch-name>                 // This command will fetch all the changes from specific branch of a specific remote without effecting our branch/work
+> git fetch <remotename>                                // This command will fetch all the changes from specific remote without effecting our branch/work
+> git fetch <remotename> <branch-name>                  // This command will fetch all the changes from specific branch of a specific remote without effecting our branch/work
+> git pull <remotename> <branch_name>                   // This command will fetch all the changes from specific branch of a specific remote and merge them to our working directory.
+                                                        // There can be conflicts and we need to resolve them. In some cases there will be no conflicts and we can have fast forward merge or recursive merge.
