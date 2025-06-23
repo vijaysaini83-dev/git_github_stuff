@@ -181,3 +181,8 @@ which is used to create a new brach, for exp: git switch -c <new_branch_name>)
 > git pull <remotename> <branch_name>                   // This command will fetch all the changes from specific branch of a specific remote and merge them to our working directory.
                                                         // There can be conflicts and we need to resolve them. In some cases there will be no conflicts and we can have fast forward merge or recursive merge.
 > git pull                                              // This is shotcut of "the git pull <remotename> <branch_name>" command when you have only one remote and the remote name is origin  
+
+Note : This command will change the history. Be vary carefull while using this command and do not rebase the brachs which you share with others.
+
+> git rebase master                                     // This command is used to rebase your feature branch on top of your master branch and will produce a more liner 
+                                                        // history. It will rewrite the history(commits) for the merge commits which produce more cleaner history.
