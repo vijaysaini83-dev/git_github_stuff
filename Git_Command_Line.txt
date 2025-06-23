@@ -186,3 +186,9 @@ Note : This command will change the history. Be vary carefull while using this c
 
 > git rebase master                                     // This command is used to rebase your feature branch on top of your master branch and will produce a more liner 
                                                         // history. It will rewrite the history(commits) for the merge commits which produce more cleaner history.
+
+Note : The Follwing Commands are related to interactive rebasing and can be used to clear the cluttring in your own branch before you share with someone.
+
+> git rebase -i HEAD~n                                  // Here -i is a flag to indicate interactive and n tells that how many commits back you wish to go.
+                                                        // Here you are not specifying the branch name because it will be doing rebasing in your current branch.
+                                                        // There are multiple option like Pick, Drop, fixup to choose and rewrite the history.
