@@ -192,3 +192,9 @@ Note : The Follwing Commands are related to interactive rebasing and can be used
 > git rebase -i HEAD~n                                  // Here -i is a flag to indicate interactive and n tells that how many commits back you wish to go.
                                                         // Here you are not specifying the branch name because it will be doing rebasing in your current branch.
                                                         // There are multiple option like Pick, Drop, fixup to choose and rewrite the history.
+
+> git tag                                               // It will list down all tags (pointer to a moment in time)
+> git tag -l  "*beta*"                                  // It will list down all tags (-l is a flag for List down) that contain "beta" in it
+> git checkout <tag>                                    // This will checkout that perticuler commit reffered by the tag and get you opportunity to branch off or look the code
+                                                        // in detached Head 
+> git diff <tag1> <tag2>                                // This will give you the comparision bwtween tag1 and tag2
