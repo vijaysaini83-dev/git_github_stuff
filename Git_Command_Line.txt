@@ -1,4 +1,5 @@
 Git Commands --
+> code -r .                                             // open the current folder from git bash in the current instance of vs code
 
 > cd <location or dirctory name>  				// To change the dirctory
 > ls 								// List the dirctories
@@ -207,3 +208,11 @@ Note : The Follwing Commands are related to interactive rebasing and can be used
 > git tag -d <tagname>                                  // This will delete the tag
 > git push <remotename> --tags                          // By default tags are not pushed to the remote. You have to specificly have to push them. This command will push all the tags to the remote
 > git push <remotename> <tagname>                       // This is how you push one tag at a time.
+
+Note : Now we will see how we can set the local config for the .git repo
+
+> git config --local user.name <local user name>        // This will set the local user name for the repo
+> git config --local user.email <local user email>      // This will set the local user email for the repo
+> git config --local user.name                          // This will show the local user name for the repo
+> git config --local user.email                         // This will show the local user email for the repo
+
