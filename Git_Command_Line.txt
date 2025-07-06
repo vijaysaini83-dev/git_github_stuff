@@ -1,4 +1,5 @@
 Git Commands --
+> code -r .                                             // open the current folder from git bash in the current instance of vs code
 
 > cd <location or dirctory name>  				// To change the dirctory
 > ls 								// List the dirctories
@@ -181,3 +182,37 @@ which is used to create a new brach, for exp: git switch -c <new_branch_name>)
 > git pull <remotename> <branch_name>                   // This command will fetch all the changes from specific branch of a specific remote and merge them to our working directory.
                                                         // There can be conflicts and we need to resolve them. In some cases there will be no conflicts and we can have fast forward merge or recursive merge.
 > git pull                                              // This is shotcut of "the git pull <remotename> <branch_name>" command when you have only one remote and the remote name is origin  
+
+Note : This command will change the history. Be vary carefull while using this command and do not rebase the brachs which you share with others.
+
+> git rebase master                                     // This command is used to rebase your feature branch on top of your master branch and will produce a more liner 
+                                                        // history. It will rewrite the history(commits) for the merge commits which produce more cleaner history.
+
+Note : The Follwing Commands are related to interactive rebasing and can be used to clear the cluttring in your own branch before you share with someone.
+
+> git rebase -i HEAD~n                                  // Here -i is a flag to indicate interactive and n tells that how many commits back you wish to go.
+                                                        // Here you are not specifying the branch name because it will be doing rebasing in your current branch.
+                                                        // There are multiple option like Pick, Drop, fixup to choose and rewrite the history.
+
+> git tag                                               // It will list down all tags (pointer to a moment in time)
+> git tag -l  "*beta*"                                  // It will list down all tags (-l is a flag for List down) that contain "beta" in it
+> git checkout <tag>                                    // This will checkout that perticuler commit reffered by the tag and get you opportunity to branch off or look the code
+                                                        // in detached Head 
+> git diff <tag1> <tag2>                                // This will give you the comparision bwtween tag1 and tag2
+> git tag <tagname>                                     // This will create a tag in your current branch to the recent commit hash. this is a light weight tag
+> git tag -a <tagname>                                  // This will create an annotated tag in your current branch to the recent commit hash. if you pass -am rather then -a then you can pass all the information
+                                                        // inline as your commit message. If you are using -a only then it will Open your text editor to give you place to write more information.
+> git show <tagname>                                    // This command will show you the metadata inside your tag
+> git tag <tagname> <commit>                            // This will create a tag for commits in history and you can make it annotated by using -a flag
+> git tag -f <tagname> <commit>                         // This will move the exiting tag to the new commit you are giving, but remember that tag name has to be unique
+> git tag -d <tagname>                                  // This will delete the tag
+> git push <remotename> --tags                          // By default tags are not pushed to the remote. You have to specificly have to push them. This command will push all the tags to the remote
+> git push <remotename> <tagname>                       // This is how you push one tag at a time.
+
+Note : Now we will see how we can set the local config for the .git repo
+
+> git config --local user.name <local user name>        // This will set the local user name for the repo
+> git config --local user.email <local user email>      // This will set the local user email for the repo
+> git config --local user.name                          // This will show the local user name for the repo
+> git config --local user.email                         // This will show the local user email for the repo
+
